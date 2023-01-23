@@ -12,9 +12,10 @@ const jump = () => {
 const loop = setInterval(() =>{
 
     const pipePosition = pipe.offsetLeft;
-    if (pipePosition >= 70){
+    if (pipePosition < 70){
 
-        pipe.style.animation ='none';
+        pipe.style.animation ='none'; 
+        pipe.style.left = `${pipePosition}px`; 
 
     }
 }, 10);

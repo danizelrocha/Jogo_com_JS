@@ -17,7 +17,7 @@
     position: absolute;
     bottom: -15px;
     width: 80px;
-    animation: pipe-animation 4s infinite linear; 
+    animation: pipe-animation 2s infinite linear; 
 }
 
 .mario{
@@ -43,23 +43,23 @@
 @keyframes jump{
 
    0% {
-    bottom: -37px;
+    bottom: 0;
    }
 
    40% {
-    bottom: 65px;
+    bottom: 120px;
    }
    
    50% {
-    bottom: 65px;
+    bottom: 120px;
    }
 
    60% {
-    bottom: 65px;
+    bottom: 120px;
    }
 
    100% {
-    bottom: -37px;
+    bottom: 0;
    }
 }
 
