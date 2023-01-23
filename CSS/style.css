@@ -1,16 +1,23 @@
 *{
-    margin: 0;
+    margin: -5px;
     padding: 0;
     box-sizing: border-box;
 }
 
 .game-board{
-    width: 80%;
+    width: 100%;
     height: 500px;
-    border: 1px solid #333;
+    border: 12px solid rgb(35, 160, 35);
+    background: linear-gradient(#87CEEB, #E0F6FF);
     margin: 0 auto;
     position: relative;
     overflow: hidden;  /* retira a imagem da tela*/
+}
+
+.clouds{
+  position: absolute;
+  width: 100%;
+  height: 320px;
 }
 
 .pipe{
