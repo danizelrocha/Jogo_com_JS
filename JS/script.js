@@ -17,7 +17,7 @@ const loop = setInterval(() =>{
     console.log(marioPosition);
 
 
-    if (pipePosition < 70 && pipePosition > 0  && marioPosition < 55){ 
+    if (pipePosition < 70 && pipePosition > 0  && marioPosition < 45){ 
        
         pipe.style.animation ='none'; 
         pipe.style.left = `${pipePosition}px`; 
@@ -26,7 +26,7 @@ const loop = setInterval(() =>{
         mario.style.bottom = `${marioPosition}px`;
         
         mario.src ='./images/mario_die.png';
-        mario.style.width = '55px';
+        mario.style.width = '45px';
 
         clearInterval(loop);
     }
