@@ -25,8 +25,8 @@ const loop = setInterval(() =>{
         mario.style.animation ='none'; 
         mario.style.bottom = `${marioPosition}px`;
         
-        mario.src ='./images/Game-over.png';
-        mario.style.width = '74px';
+        mario.src ='./images/mario_die.png';
+        mario.style.width = '55px';
 
         clearInterval(loop);
     }

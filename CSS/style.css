@@ -1,5 +1,5 @@
 *{
-    margin: 0px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -7,7 +7,7 @@
 .game-board{
     width: 100%;
     height: 500px;
-    border-bottom: 16px solid rgb(0, 140, 0);
+    border-bottom: 12px solid rgb(0, 140, 0);
     background: linear-gradient(#87CEEB, #E0F6FF);
     margin: 0 auto;
     position: relative;
@@ -17,15 +17,25 @@
 .clouds{
   width: 320px;
   position: absolute;
-  margin-top: -60px;
+  margin-top: -70px;
+  z-index: 2;
   animation: clouds-animation 30s infinite linear;
+}
+
+.fundo{
+  width: 300px;
+  padding: 28px;
+  margin-top: 100px;
+  position: absolute;
+  z-index: 1;
+  animation: fundo-animation 70s infinite linear ;
 }
 
 .pipe{
     position: absolute;
     bottom: -15px;
     width: 80px;
-    animation: pipe-animation 3s infinite linear; 
+    animation: pipe-animation 2s infinite linear; 
 }
 
 .mario{
@@ -36,6 +46,15 @@
 
 .jump{
     animation: jump 500ms infinite ease-out;
+}
+
+@keyframes fundo-animation {
+  from{
+    right: -300px;
+  }
+  to {
+    right: 100%;
+  }
 }
 
 @keyframes clouds-animation{
